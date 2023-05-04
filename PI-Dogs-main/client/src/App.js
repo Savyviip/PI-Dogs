@@ -39,7 +39,8 @@ function App() {
       <Routes >
         <Route path="/" element={<Landing></Landing>}></Route>
         {/* <Route path="/home" component={CustomButton} */}
-        <Route path='/home' element={<Cards></Cards>}></Route>   
+        <Route path='/home' element={<Cards></Cards>}></Route>
+        <Route path="/detail"></Route>
       </Routes>
 
       {/* dog={dogs} onClose={onClose} */}
