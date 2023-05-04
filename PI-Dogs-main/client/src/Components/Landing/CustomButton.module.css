@@ -1,0 +1,58 @@
+
+p {
+    font-family: "Comic Sans MS", cursive;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+p:hover {
+    text-decoration: underline;
+    transition: all 1s ease-in-out;
+}
+
+.customButton {
+    font-size: 54px;
+    color: #fff;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: 3px solid #00ffff;
+    /* cambiamos el color del borde a celeste */
+    background-color: #333;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: background-color;
+    padding: 24px 48px;
+    border-radius: 70px;
+}
+
+.customButton:focus,
+.customButton:hover {
+    background-color: #000;
+    /* cambiamos el fondo del botón a negro cuando se hace hover o se enfoca */
+    border-width: 7px;
+}
+
+.customButton:focus:after,
+.customButton:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+.customButton:after {
+    content: "";
+    pointer-events: none;
+    bottom: -6px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 6px;
+    background-color: #00ffff;
+    /* cambiamos el color del resplandor a celeste */
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}

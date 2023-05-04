@@ -1,9 +1,9 @@
 import React from "react";
-import Card from "./Card";
+import Card from "../Card/Card.jsx";
 import { useDispatch, useSelector } from "react-redux";
+import style from "./Cards.module.css";
+
 // usamos un estado para guardar los perros
-
-
 
 
 export default function Cards(props) {
@@ -11,8 +11,8 @@ export default function Cards(props) {
     const dispatch = useDispatch()
 
     return (
+        <div className={style.containe}>
 
-        <div>
             {dogs.map((dog) => {
                 const { id, name, age, height, weight, image, temperaments } = dog;
                 return (

@@ -1,0 +1,13 @@
+.containe {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin: auto;
+    background-color: rgb(0, 0, 0);
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 4px 4px 2px 0px rgba(0, 0, 0, 0.75);
+
+}

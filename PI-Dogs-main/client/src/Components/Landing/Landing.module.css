@@ -1,0 +1,10 @@
+body {
+    background-image: url("/PI/PI-Dogs/PI-Dogs-main/client/src/Components/Images/image-background2.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    background-repeat: repeat;
+    position: relative;
+    width: 100%;
+    max-width: 1200px
+}
