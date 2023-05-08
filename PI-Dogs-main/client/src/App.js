@@ -7,6 +7,7 @@ import { useDispatch } from 'react-redux';
 import { addDogs } from './Redux/action';
 import Nav from "./Components/Nav/Nav";
 import Landing from "./Components/Landing/Landing";
+import Detail from './Components/Detail/Detail';
 
 function App() {
   const dispatch = useDispatch()
@@ -40,7 +41,7 @@ function App() {
         <Route path="/" element={<Landing></Landing>}></Route>
         {/* <Route path="/home" component={CustomButton} */}
         <Route path='/home' element={<Cards></Cards>}></Route>
-        <Route path="/detail"></Route>
+        <Route path='/detail/:id' element={<Detail />} />
       </Routes>
 
       {/* dog={dogs} onClose={onClose} */}
