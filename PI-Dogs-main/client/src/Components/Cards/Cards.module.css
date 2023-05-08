@@ -1,5 +1,6 @@
 body {
     background-image: url("https://besthqwallpapers.com/Uploads/14-12-2019/115857/thumb2-paws-patterns-creative-footprints-patterns-abstract-backgrounds-dog-footprints.jpg");
+    /* ACA ESTA EL FONDO */
 }
 
 .cards {
@@ -12,5 +13,20 @@ body {
     padding: 2em;
     border-radius: 10px;
     box-shadow: 4px 4px 2px 6px rgba(0, 0, 0, 0.75);
-    
+    margin-top: 3rem;
+}
+
+.pagination {
+    margin-top: 1rem;
+    transform: scale(1.60);
+}
+
+button {
+    border-radius: 2rem;
+    background-color: rgb(240, 185, 134);
+}
+
+button:hover {
+    transform: scale(1.09);
+    transition: transform 0.2s ease-in-out;
 }

@@ -66,23 +66,25 @@ export default function Cards(props) {
                         />
                     );
                 })}
+
+                <div className={style.pagination}>
+                    <button onClick={prev}>Anterior</button>
+                    {currentPages.map((number) => (
+                        <button
+                            key={number}
+                            onClick={() => paginate(number)}
+                            className={number === currentPage ? style.active : null}
+                        >
+                            {number}
+                        </button>
+                    ))}
+                    {pageNumbers.indexOf(currentPage) < pageNumbers.length - 1 && (
+                        <button onClick={next}>Siguiente</button>
+                    )}
+                </div>
             </div>
 
-            <div className={style.pagination}>
-                <button onClick={prev}>Anterior</button>
-                {currentPages.map((number) => (
-                    <button
-                        key={number}
-                        onClick={() => paginate(number)}
-                        className={number === currentPage ? style.active : null}
-                    >
-                        {number}
-                    </button>
-                ))}
-                {pageNumbers.indexOf(currentPage) < pageNumbers.length - 1 && (
-                    <button onClick={next}>Siguiente</button>
-                )}
-            </div>
+
         </div>
     );
 }

@@ -15,8 +15,9 @@ export default function Card({ image, id, name, temperaments, weight }) {
                 <h2>Nombre: {name}</h2>
                 <h2>Temperamento: {temperaments.join(", ")}</h2>
                 <h2>Peso: {weight}</h2>
-                <Link to={`/detail/${id}`}>Ver</Link>
-
+                <button className={style.customButton}>
+                    <Link to={`/detail/${id}`}>Ver</Link>
+                </button>
                 {/* <button  className={style.closeButton}>X</button> */}
 
             </div>

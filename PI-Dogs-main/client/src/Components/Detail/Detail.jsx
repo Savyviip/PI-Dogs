@@ -12,9 +12,6 @@ export default function Detail() {
 
   return (
     <>
-      <div className="btnClose" onClick={() => navigate(-1)}>
-        Volver
-      </div>
       <div className={style.cardContainer}>
         <div className={style.card}>
           <div className={style.cardImage}>
@@ -29,9 +26,17 @@ export default function Detail() {
             <p className={style.cardText}>
               Temperamentos {temperaments.join(", ")}
             </p>
+
+            <button>
+        <div className="btnClose" onClick={() => navigate(-1)}>
+          Volver
+        </div>
+      </button>
+      
           </div>
         </div>
       </div>
+
     </>
   );
 }
