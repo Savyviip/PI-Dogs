@@ -5,7 +5,7 @@ import style from "./Cards.module.css";
 
 export default function Cards(props) {
     const { dogs } = useSelector((state) => state);
-    const dispatch = useDispatch();
+    // const dispatch = useDispatch();
 
     // definimos el número máximo de botones a mostrar
     const pageNumberLimit = 3;
@@ -50,7 +50,7 @@ export default function Cards(props) {
     return (
         <div className={style.conteiner}>
             <div className={style.cards} >
-                {dogs.map((dog) => {
+                {currentDogs.map((dog) => {
                     console.log(dog)
                     const { id, name, age, height, weight, image, temperaments } = dog;
                     return (
@@ -83,8 +83,6 @@ export default function Cards(props) {
                     )}
                 </div>
             </div>
-
-
         </div>
     );
 }

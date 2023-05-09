@@ -1,5 +1,4 @@
 body {
-    background-image: url("/PI/PI-Dogs/PI-Dogs-main/client/src/Components/Images/image-background2.jpg");
     background-size: cover;
     background-position: center;
     margin: 0 auto;
@@ -9,3 +8,10 @@ body {
     max-width: 1200px
 }
 
+/* .conteinerLanding {
+    transform: scale(0.50);
+} */
+
+.customImage {
+    background-image: url("/PI/PI-Dogs/PI-Dogs-main/client/src/Components/Images/image-background2.jpg");
+}
