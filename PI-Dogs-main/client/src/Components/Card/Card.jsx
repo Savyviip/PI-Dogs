@@ -13,7 +13,7 @@ export default function Card({ image, id, name, temperaments, weight }) {
                 {/* onClick={() => props.onClose(props.id)} */}
                 <h2>ID: {id}</h2>
                 <h2>Nombre: {name}</h2>
-                <h2>Temperamento: {temperaments.join(", ")}</h2>
+                {/* <h2>Temperamento: {temperaments.join(", ")}</h2> */}
                 <h2>Peso: {weight}</h2>
                 <button className={style.customButton}>
                     <Link to={`/detail/${id}`}>Ver</Link>

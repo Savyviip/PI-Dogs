@@ -50,7 +50,7 @@ export default function Cards(props) {
     return (
         <div className={style.conteiner}>
             <div className={style.cards} >
-                {currentDogs.map((dog) => {
+                {dogs.map((dog) => {
                     console.log(dog)
                     const { id, name, age, height, weight, image, temperaments } = dog;
                     return (

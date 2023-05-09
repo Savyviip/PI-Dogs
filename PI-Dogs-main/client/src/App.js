@@ -12,6 +12,7 @@ import Detail from './Components/Detail/Detail';
 function App() {
   const dispatch = useDispatch()
   const location = useLocation() // en que direccion estoy
+  
   useEffect(() => {
     axios.get("http://localHost:3001/dogs")
       .then(({ data }) => {
@@ -32,11 +33,6 @@ function App() {
   return (
     <div className="App">
       {location.pathname !== "/" && <Nav onSearch={onSearch}></Nav>}
-
-      {/* <nav>
-        <Nav></Nav>
-      </nav> */}
-
       <Routes >
         <Route path="/" element={<Landing></Landing>}></Route>
         {/* <Route path="/home" component={CustomButton} */}
