@@ -24,7 +24,7 @@ export default function Detail() {
             <p className={style.cardText}>Altura {height}</p>
             <p className={style.cardText}>Peso {weight}</p>
             <p className={style.cardText}>
-              Temperamentos {temperaments.join(", ")}
+              Temperamentos {temperaments !==null ? temperaments.join(", ") : null} 
             </p>
 
             <button>
