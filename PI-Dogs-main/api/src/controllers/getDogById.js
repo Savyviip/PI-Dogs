@@ -42,7 +42,7 @@ async function getDogById(req, res) {
                     age,
                     temperament: temperaments.map(t => t.name)
                 })
-            }
+            } // Si no existe enviamos una info de error 400
             else res.status(400).json({ error: "The id of this dog does not exist" })
         }
     } catch (error) {
